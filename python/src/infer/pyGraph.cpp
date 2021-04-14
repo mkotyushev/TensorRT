@@ -343,6 +343,7 @@ namespace tensorrt
             .value("HARD_SIGMOID", ActivationType::kHARD_SIGMOID, ActivationTypeDoc::HARD_SIGMOID)
             .value("SCALED_TANH", ActivationType::kSCALED_TANH, ActivationTypeDoc::SCALED_TANH)
             .value("THRESHOLDED_RELU", ActivationType::kTHRESHOLDED_RELU, ActivationTypeDoc::THRESHOLDED_RELU)
+            .value("HARDSHRINK", ActivationType::kHARDSHRINK, ActivationTypeDoc::HARDSHRINK)
         ; // ActivationType
 
         py::class_<IActivationLayer, ILayer, std::unique_ptr<IActivationLayer, py::nodelete>>(m, "IActivationLayer", IActivationLayerDoc::descr)
