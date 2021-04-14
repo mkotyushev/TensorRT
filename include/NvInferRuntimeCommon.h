@@ -126,7 +126,7 @@ enum class ActivationType : int32_t
 template <>
 constexpr inline int32_t EnumMax<ActivationType>()
 {
-    return 12;
+    return 13;
 }
 
 //!
